@@ -13,11 +13,10 @@ width="400" align="right">
 This is the repo that will be used for the password checker program.
 </h3>
 
-More specifically, this is a repository that will be refined throughout the duration of the 2026 Fall Semester at Macomb Community College. 
+More specifically, this is a repository that will host all projects created for ITIA 1510 in the 2026 Fall Semester at Macomb Community College. 
   
-<h3>The purpose of this project is to:</h3>
+<h3>The purpose of the projects here are to:</h3>
 
   1. Deepen my understanding of Python 
   2. Deepen my understanding of GitHub
   3. Deepen my understanding of AI tools and their uses
-  4. Create a program in Python that will function as a proper password evaluation tool
