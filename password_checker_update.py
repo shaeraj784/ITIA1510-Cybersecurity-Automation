@@ -11,7 +11,7 @@ rotation_count = 0
 
 #Addtl. Variables
 #Non-essential variables for various features, usually related to the output
-program_version = 'Password Security Checker 1.0.0 Alpha'
+program_version = 'Password Security Checker 1.0.5 Alpha'
 half_count = len(program_version) // 2 + 1
 
 
