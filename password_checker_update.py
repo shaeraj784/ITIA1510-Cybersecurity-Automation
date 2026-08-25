@@ -23,7 +23,7 @@ print('=' + '=' * len(program_version) + '=')
 #User Prompts
 #Querying of the user to obtain relevant info
 #Report header should be symmetrical regardless of version number
-account = input('Input the name of the system the account belongs to (E.G. Outlook, Gmail, Proton, etc):')
+account = input('Input which system the account belongs to (E.G. Outlook, Gmail, Proton, etc):')
 #Username is collected to log which accounts need remediation
 username = input('Input username:')
 password = input('Input password:')
