@@ -13,7 +13,7 @@ width="400" align="right">
 This is the repo that will be used for the password checker program.
 </h3>
 
-More specifically, this is a repository that will host all projects created for ITIA 1510 in the 2026 Fall Semester at Macomb Community College. 
+Furthermore, this will host all my submissions for assignments in ITIA 1510 during the 2026 Fall Semester at Macomb Community College. 
   
 <h3>The purpose of the projects here are to:</h3>
 
