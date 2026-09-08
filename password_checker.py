@@ -27,7 +27,7 @@ critical_count = 0
 
 #Addtl. Variables
 #Non-essential variables for various features, usually related to the output
-program_version = 'Password Security Checker 1.1.0 Alpha'
+program_version = 'Password Security Checker 1.2.0 Alpha'
 half_count = len(program_version) // 2 + 1
 audit_title_justify = 0
 batch_title_justify = 0
