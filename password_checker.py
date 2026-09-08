@@ -21,6 +21,7 @@ overall_pass = 0
 #Week 03 Variables
 char = 0
 batch_size = 0
+count = 0
 total_pass = 0
 total_fail = 0
 critical_count = 0
@@ -31,15 +32,32 @@ program_version = 'Password Security Checker 1.2.0 Alpha'
 half_count = len(program_version) // 2 + 1
 audit_title_justify = 0
 batch_title_justify = 0
+border_size = len(program_version)+2
+
+#Border Styles
+def border_equals():
+    print(border_size * '=')
+def border_underscore():
+    print(border_size * '_')
+def border_octothorpe():
+    print(border_size * '#')
+def border_minus():
+    print(border_size * '-')
+def border_plus():
+    print(border_size * '+')
 
 #____________________ Header & User Prompts ____________________
 
 #Progam Version Header
-print('=' + '=' * len(program_version) + '=')
+#print('=' + '=' * len(program_version) + '=')
+border_plus()
 print(' ' + program_version + ' ')
-print('=' + '=' * len(program_version) + '=')
+border_plus()
+#print('=' + '=' * len(program_version) + '=')
 
 #Program Loops
+#Iterates count up to batch_size
+#Variables must be initialized outside of loop as to not overwrite themselves with unintended results
 batch_size = 3
 count = 0
 while count < batch_size:
@@ -117,9 +135,9 @@ while count < batch_size:
 #Audit Report Header
 #Should automatically justify based on # of reports as long as the # of reports isn't too big
     audit_title_justify = (len('Audit Report ' + str(count) +  ' of ' + str(batch_size) ))//2
-    print('=' + '=' * len(program_version) + '=')
+    border_equals()
     print((half_count-audit_title_justify)* ' '  + 'Audit Report ' + str(count) +  ' of ' + str(batch_size) + (half_count-audit_title_justify) * ' ')
-    print('=' + '=' * len(program_version) + '=')
+    border_equals()
     print(' ')
 
 #Audit Report Body
@@ -140,11 +158,11 @@ while count < batch_size:
 
 #Audit Report Verdict
     print(' ')
-    print('-' + '-' * len(program_version) + '-')
+    border_minus()
     print((half_count - 3 )* ' '  + 'Verdict' +  (half_count - 3) * ' ')
-    print('=' + '=' * len(program_version) + '=')
+    border_equals()
     print((len(program_version) - len(overall_pass)) * ' ' + overall_pass)
-    print('=' + '=' * len(program_version) + '=')
+    border_equals()
     print(' ')
     print(' ')
 
@@ -155,9 +173,9 @@ print(' ')
 print(' ')
 
 #batch_summary_justify is subtracted from due to being the expected bigger number
-print('#' + '#' * len(program_version) + '#')
+border_octothorpe()
 print((half_count - batch_title_justify)* ' ' + 'Batch Audit Summary' + ' ' * (half_count - batch_title_justify))
-print('#' + '#' * len(program_version) + '#')
+border_octothorpe()
 print('Passwords audited:  ' + str(batch_size))
 print('Passed:             ' + str(total_pass))
 print('Failed:             ' + str(total_fail))
